@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Demo</title>
+
+     <style>
+
+.inline-menu a {
+    display: inline;               /* inline */
+    background: #2ecc71;           /* green */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.inline-block-menu a {        
+     /* inline-block */
+    display: inline-block;
+    background: #9b59b6;           /* purple */
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    line-height: 35px;            
+}
+
+.float-menu a {
+    float: left;                   /* floating buttons */
+    background: #e67e22;           /* orange */
+    color: white;
+    padding: 12px 25px;
+    margin-right: 15px;            /* spacing */
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Hover effects (optional) */
+.inline-menu a:hover,
+.inline-block-menu a:hover,
+.float-menu a:hover {
+    opacity: 0.85;
+}
+
+/* Clearfix to avoid float issues */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Navigation Menu Demo</h1>
+
+    <!-- block example -->
+    <h2>Block Example</h2>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">Home</button> 
+    <br>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">Products</button>
+    <br>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">About</button>
+    <br>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">Contact</button>
+    <br>
+
+    <h2>Inline Example</h2>
+    <div class="inline-menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <h2>Inline-Block Example</h2>
+    <div class="inline-block-menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <h2>Float Example</h2>
+    <div class="float-menu clearfix">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>

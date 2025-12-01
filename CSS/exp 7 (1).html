@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Demo</title>
+    <!-- <style>
+        /* block example */
+        button {
+           background-color: rgb(9, 150, 231);
+           color: white;
+           height: 35px;
+           width: 1350px;
+           border-color: rgb(9, 150, 231);
+           margin: 2px;
+           text-align: left;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- block example -->
+    <h1>Block Example</h1>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">Home</button> 
+    <br>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">Product</button>
+    <br>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">About</button>
+    <br>
+    <button style="height: 35px; margin: 2px; width: 1350px; background-color: rgb(9, 150, 231); border-color: rgb(9, 150, 231); text-align: left; color: white;">Contact</button>
+    <br>
+    
+    <!-- inline example -->
+     <h2>inline</h2>
+    <a href="#" class="button">Home</a>
+<a href="#" class="button">Products</a>
+<a href="#" class="button">About</a>
+<a href="#" class="button">Contact</a>
+
+<style>
+  .button {
+    display: inline-block;
+    background: #24df97;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+</style>
+
+<h2>Inline Block</h2>
+<div style="display: inline-block; text-align: center; background-color: rgb(144, 58, 224); margin-right: 10px; height: 35px; width: 100px; color: white; line-height: 1px;">
+    <h4>Home</h4>
+</div>
+<div style="display: inline-block; text-align: center; background-color: rgb(144, 58, 224); margin-right: 10px; height: 35px; width: 100px; color: white; line-height: 1px;">
+    <h4>Products</h4>
+</div>
+<div style="display: inline-block; text-align: center; background-color: rgb(144, 58, 224); margin-right: 10px; height: 35px; width: 100px; color: white; line-height: 1px;">
+    <h4>About</h4>
+</div>
+<div style="display: inline-block; text-align: center; background-color: rgb(144, 58, 224); margin-right: 10px; height: 35px; width: 100px; color: white; line-height: 1px;">
+    <h4>Contact</h4>
+</div>
+
+<!-- float example -->
+<h2>float example</h2>
+<div class="float-menu">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<div style="clear: both;"></div>
+
+.float-menu a {
+    float: left;                /* puts items in a row */
+    background-color: #e67e22;  /* orange */
+    color: white;
+    padding: 12px 25px;
+    margin-right: 15px;         /* gap between buttons */
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.float-menu a:hover {
+    opacity: 0.8;
+}
+
+/* clears float so other content doesn't shift */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+</body>
+</html>
