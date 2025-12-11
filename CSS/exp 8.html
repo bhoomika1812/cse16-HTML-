@@ -1,95 +1,45 @@
-<!-- web page for student profile card; design layouts using flexbox (justify-content, align-items, flex-direction) -->
-<!-- flex-direction: row; → pic on left, info on right
-
-justify-content: space-between; → spaced-out clean layout
-
-align-items: flex-start; → left-aligned aesthetic -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile Card</title>
-    
-    <style>
-      body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            height: 100vh;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding-top: 40px;
-        }
-
-        h1 {
-            margin-bottom: 40px;
-        }
-
-        .profile-card {
-            width: 350px;
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 25px;
-
-            border: 1px solid #dcdcdc;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .profile-pic {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            
-            background: linear-gradient(135deg, rgb(71, 109, 236));
-            margin-right: 20px;
-            border: 4px solid white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-
-            display: flex;
-            justify-content: center;
-            color: white;
-            align-items: center;
-
-        }
-
-        .profile-info h2 {
-            margin: 0 0 10px 0;
-            color: #333;
-        }
-
-        .profile-info p {
-            margin: 5px 0;
-            font-size: 16px;
-            color: #444;
-        }
-
-        .profile-info b {
-            color: #000;
-        }
-
-    </style>
+    <title>student card</title>
+    <link rel="stylesheet" href="exp 8.css">
 </head>
 <body>
-  <h1>Student Profile Card</h1>
-
-    <div class="profile-card">
-        <div class="profile-pic">BM</div>
-
-        <div class="profile-info">
-            <h2>Bhoomika Mittal</h2>
-             <p><b>B-Tech:</b> CSE</p>
-             <p><b>Roll No.:</b> 2025B01010863</p>
-             <p><b>Year:</b> 1st Year</p>
+    <div class="container">
+     <div class="card">
+        <div class="circle">AK</div> 
+        <h3>Bhoomika Mittal</h3>
+        <p>B.tech-cse</p>
+        <p>Roll no.-38</p>
+        <p>1st Year</p>
         </div>
-    </div>
+        
+
+     <div class="card">
+        <div class="circle">AU</div> 
+        <h3>Ayushi Upadhyay</h3>
+        <p>B.tech-cse</p>
+        <p>Roll no.-40</p>
+        <p>1st Year</p>
+        </div>
+    
+     <div class="card">
+        <div class="circle">BM</div> 
+        <h3>Ayushi Kushwaha</h3>
+        <p>B.tech-cse</p>
+        <p>Roll no.- 54</p>
+        <p>1st Year</p>
+        </div>
+    
+    <div class="card">
+        <div class="circle">AS</div> 
+        <h3>Ayushi Singhal</h3>
+        <p>B.tech-cse</p>
+        <p>Roll no.-39 </p>
+        <p>1st Year</p>
+        </div>
+    
 </body>
 </html>
